@@ -1,14 +1,29 @@
-import Image from "next/image";
 import Link from "next/link";
+
+const socialLinks = [
+  {
+    href: "https://www.linkedin.com/company/the-golf-cart",
+    label: "LinkedIn",
+    icon: "/linkedin.svg",
+    key: "linkedin"
+  },
+  {
+    href: "https://www.instagram.com/thegolfcartny/",
+    label: "Instagram",
+    icon: "/instagram.svg",
+    key: "instagram"
+  },
+  {
+    href: "https://www.facebook.com/thegolfcart315",
+    label: "Facebook",
+    icon: "/facebook.svg",
+    key: "facebook"
+  }
+];
 
 export function SiteHeader() {
   return (
     <header className="site-header">
-      <div className="site-header__brand">
-        <Link href="/" aria-label="The Golf Cart home">
-          <Image src="/logo-wordmark.png" alt="The Golf Cart" width={210} height={105} priority />
-        </Link>
-      </div>
       <nav className="site-header__nav" aria-label="Site">
         <Link href="/">Home</Link>
         <Link href="/#about">About Us</Link>
@@ -16,16 +31,29 @@ export function SiteHeader() {
         <Link href="/packages">Packages</Link>
         <Link href="/packages#contact">Contact Us</Link>
       </nav>
+      <div className="site-header__brand">
+        <Link href="/" aria-label="The Golf Cart home">
+          <img src="/logo-main.avif" alt="The Golf Cart" className="site-header__logo" />
+        </Link>
+      </div>
       <div className="site-header__actions">
-        <a href="https://www.linkedin.com/company/the-golf-cart" target="_blank" rel="noreferrer">
-          LinkedIn
-        </a>
-        <a href="https://www.instagram.com/thegolfcartny/" target="_blank" rel="noreferrer">
-          Instagram
-        </a>
-        <a href="https://www.facebook.com/thegolfcart315" target="_blank" rel="noreferrer">
-          Facebook
-        </a>
+        {socialLinks.map((item) => (
+          <a
+            key={item.label}
+            href={item.href}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={item.label}
+            className="social-icon-link"
+          >
+            <img
+              src={item.icon}
+              alt=""
+              aria-hidden="true"
+              className={`social-icon social-icon--${item.key}`}
+            />
+          </a>
+        ))}
         <Link href="/packages" className="button button--solid button--small">
           Book Now
         </Link>
@@ -54,15 +82,23 @@ export function SiteFooter() {
       <div className="site-footer__bottom">
         <p>© 2026 The Golf Cart</p>
         <div className="site-footer__links">
-          <a href="https://www.linkedin.com/company/the-golf-cart" target="_blank" rel="noreferrer">
-            LinkedIn
-          </a>
-          <a href="https://www.instagram.com/thegolfcartny/" target="_blank" rel="noreferrer">
-            Instagram
-          </a>
-          <a href="https://www.facebook.com/thegolfcart315" target="_blank" rel="noreferrer">
-            Facebook
-          </a>
+          {socialLinks.map((item) => (
+            <a
+              key={item.label}
+              href={item.href}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={item.label}
+              className="social-icon-link"
+            >
+              <img
+                src={item.icon}
+                alt=""
+                aria-hidden="true"
+                className={`social-icon social-icon--${item.key}`}
+              />
+            </a>
+          ))}
         </div>
       </div>
     </footer>
