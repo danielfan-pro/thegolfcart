@@ -81,25 +81,6 @@ export function SiteFooter() {
       </div>
       <div className="site-footer__bottom">
         <p>© 2026 The Golf Cart</p>
-        <div className="site-footer__links">
-          {socialLinks.map((item) => (
-            <a
-              key={item.label}
-              href={item.href}
-              target="_blank"
-              rel="noreferrer"
-              aria-label={item.label}
-              className="social-icon-link"
-            >
-              <img
-                src={item.icon}
-                alt=""
-                aria-hidden="true"
-                className={`social-icon social-icon--${item.key}`}
-              />
-            </a>
-          ))}
-        </div>
       </div>
     </footer>
   );

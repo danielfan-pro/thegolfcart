@@ -135,8 +135,7 @@ img {
 }
 
 .site-header__nav,
-.site-header__actions,
-.site-footer__links {
+.site-header__actions {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -530,9 +529,11 @@ img {
 }
 
 .site-footer__bottom {
+  justify-content: center;
   padding-top: 24px;
   border-top: 1px solid var(--line);
   color: var(--muted);
+  text-align: center;
 }
 
 .site-footer__contact {
