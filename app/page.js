@@ -236,7 +236,11 @@ export default function HomePage() {
           {faqs.map((item) => (
             <details key={item.question} className="faq">
               <summary>{item.question}</summary>
-              <p>{item.answer}</p>
+              {item.answerHtml ? (
+                <p dangerouslySetInnerHTML={{ __html: item.answerHtml }} />
+              ) : (
+                <p>{item.answer}</p>
+              )}
             </details>
           ))}
         </div>

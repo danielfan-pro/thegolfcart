@@ -33,13 +33,13 @@ export const featuredEvents = [
 export const faqs = [
   {
     question: "How do I secure my event date and time?",
-    answer:
-      "A $200 deposit is required to secure your booking date and time. Your reservation is not confirmed until the deposit has been received."
+    answerHtml:
+      "A <strong>$200 deposit</strong> is required to secure your booking date and time. Your reservation is not confirmed until the deposit has been received."
   },
   {
     question: "What is your cancellation and refund policy?",
-    answer:
-      "Cancellations made within 24 hours of the event may not be refundable. Earlier cancellations due to severe weather may be eligible for rescheduling or a refund. Light rain does not automatically qualify for cancellation."
+    answerHtml:
+      "Cancellations made within <strong>24 hours of the event</strong> may not be refundable. Earlier cancellations due to <strong>severe weather</strong> may be eligible for rescheduling or a refund. Light rain does not automatically qualify for cancellation."
   },
   {
     question: "How much setup time is needed?",
@@ -53,8 +53,8 @@ export const faqs = [
   },
   {
     question: "How much space is needed for setup?",
-    answer:
-      "We require a reasonably level and safe area for setup. Space requirements may vary depending on the location, so we recommend contacting us in advance to confirm your event space is suitable."
+    answerHtml:
+      "We require a <strong>reasonably level and safe area</strong> for setup. Space requirements may vary depending on the location, so we recommend contacting us in advance to confirm your event space is suitable."
   },
   {
     question: "Do I need to provide clubs?",
@@ -68,13 +68,13 @@ export const faqs = [
   },
   {
     question: "Can I book extra time during my event?",
-    answer:
-      "Yes. Additional time may be available if scheduling allows. Extra time is billed at $200 per hour in 30-minute increments, and payment must be made before the additional time begins."
+    answerHtml:
+      "Yes — <strong>additional time may be available if scheduling allows</strong>. Extra time is billed at <strong>$200 per hour in 30-minute increments</strong>, and payment must be made before the additional time begins."
   },
   {
     question: "Do I need to provide a power source?",
-    answer:
-      "In some cases, yes. If needed, the client must provide access to a safe and nearby power outlet unless other arrangements have been made in advance."
+    answerHtml:
+      "In some cases, yes. If needed, the client must provide access to a <strong>safe and nearby power outlet</strong>, unless other arrangements have been made in advance."
   }
 ];
 
