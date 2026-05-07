@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import { SiteFooter, SiteHeader } from "../components/site-chrome";
-import { faqs, featuredEvents, heroHighlights, testimonials } from "../components/site-data";
+import { faqs, featuredEvents, testimonials } from "../components/site-data";
 
 function StepIcon({ kind }) {
   if (kind === "handshake") {
@@ -98,17 +98,6 @@ export default function HomePage() {
               Book Now
             </Link>
           </div>
-        </div>
-      </section>
-
-      <section className="section section--flush-top">
-        <div className="card-grid card-grid--four">
-          {heroHighlights.map((item) => (
-            <article key={item.title} className="mini-card">
-              <h3>{item.title}</h3>
-              <p>{item.description}</p>
-            </article>
-          ))}
         </div>
       </section>
 

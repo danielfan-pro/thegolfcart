@@ -1,22 +1,3 @@
-export const heroHighlights = [
-  {
-    title: "Corporate & Team Events",
-    description: "Office parties, client nights, offsites, and team-building."
-  },
-  {
-    title: "Birthdays & Private Parties",
-    description: "Adult birthdays, family gatherings, and backyard parties."
-  },
-  {
-    title: "Bars, Breweries & Event Venues",
-    description: "Drive foot traffic, keep guests longer, and create a unique draw."
-  },
-  {
-    title: "Fundraisers & Tournaments",
-    description: "Closest-to-the-pin contests, long drive challenges, and charity events."
-  }
-];
-
 export const featuredEvents = [
   "Birthdays",
   "Reunions",
